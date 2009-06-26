@@ -3,12 +3,13 @@
 	Contributed by Jonathan Czeck
 */
 using UnityEngine;
+using UnitySteer;
 using UnitySteer.Vehicles;
 using System.Collections;
 
 public class LightningBolt : MonoBehaviour
 {
-	public Transform target;
+	public WanderBehavior target;
 	public int zigs = 100;
 	public float speed = 1f;
 	public float scale = 1f;
@@ -31,34 +32,33 @@ public class LightningBolt : MonoBehaviour
 		vehicles = new Rope[particles.Length];
 		RandomizeParticlePositions();
 
-		for(int i = 0; i < particles.Length; i++)
+		for(int i = particles.Length - 1; i >= 0; i--)
 		{
-		    // Transform t = new Transform();
 		    vehicles[i] = new Rope(particles[i].position, 0.1f, null, null);
 		    
 		    vehicles[i].Mass = 0.1f;
 		    vehicles[i].Radius = 0.05f;
-		    vehicles[i].MaxSpeed = 5f;
-		    vehicles[i].MaxForce = 10f;
-		}
-		for(int i = 0; i < particles.Length - 1; i++)
-		{
-		    // Transform t = new Transform();
-		    vehicles[i].Next = vehicles[i+1];
-		    if (i > 0)
-		    {
-		        vehicles[i].Previous = vehicles[i-1];
-	        }
+		    vehicles[i].MaxSpeed = 10f;
+		    vehicles[i].MaxForce =  5;
+
+            if (i < particles.Length - 1)
+            {
+		        vehicles[i].Next = vehicles[i+1];
+		        vehicles[i+1].Previous = vehicles[i];
+            }
+            else
+            {
+		        vehicles[i].Next = target.Wanderer;
+            }
+		    
 		}
 	}
 	
 	void Update ()
 	{
-	    // RandomizeParticlePositions(true);
-		RandomizeParticlePositions(particles.Length - 1);
-	    // Randomize the position of the last particle only
-		vehicles[particles.Length-1].Position = particles[particles.Length-1].position;
-		for(int i = 0; i < particles.Length -1; i++)
+	    //RandomizeParticlePositions(false);
+
+		for(int i = particles.Length - 1; i >= 0; i--)
 		{
 		    vehicles[i].Position = particles[i].position;
 		    vehicles[i].update(Time.time, Time.deltaTime);
@@ -107,7 +107,7 @@ public class LightningBolt : MonoBehaviour
 		for (int i = startIndex; i < particles.Length; i++)
 		{
 		    Vector3 position = isOffset ? particles[i].position
-		                            : Vector3.Lerp(transform.position, target.position, oneOverZigs * (float)i);
+		                            : Vector3.Lerp(transform.position, target.Wanderer.Position, oneOverZigs * (float)i);
 			Vector3 offset = new Vector3(noise.Noise(timex + position.x, timex + position.y, timex + position.z),
 										noise.Noise(timey + position.x, timey + position.y, timey + position.z),
 										noise.Noise(timez + position.x, timez + position.y, timez + position.z));
