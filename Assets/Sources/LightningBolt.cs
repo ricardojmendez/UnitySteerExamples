@@ -36,10 +36,12 @@ public class LightningBolt : MonoBehaviour
 		{
 		    vehicles[i] = new Rope(particles[i].position, 0.1f, null, null);
 		    
-		    vehicles[i].Mass = 0.1f;
-		    vehicles[i].Radius = 0.05f;
+		    vehicles[i].Mass     =  0.1f;
+		    vehicles[i].Radius   =  0.05f;
 		    vehicles[i].MaxSpeed = 10f;
 		    vehicles[i].MaxForce =  5;
+		    vehicles[i].PreviousStrength = 0.5f;
+		    vehicles[i].NextStrength     = 1.0f;
 
             if (i < particles.Length - 1)
             {
