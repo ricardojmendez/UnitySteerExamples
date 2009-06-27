@@ -61,7 +61,7 @@ public class LightningBolt : MonoBehaviour
 		for(int i = particles.Length - 1; i >= 0; i--)
 		{
 		    vehicles[i].Position = particles[i].position;
-		    vehicles[i].update(Time.time, Time.deltaTime);
+		    vehicles[i].Update(Time.deltaTime);
 		    particles[i].position = vehicles[i].Position;
 		}
 		
