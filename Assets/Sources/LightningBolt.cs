@@ -23,7 +23,7 @@ public class LightningBolt : MonoBehaviour
 	float oneOverZigs;
 	
 	private Particle[] particles;
-	private Rope[] vehicles;
+	private Chain[] vehicles;
 	
 	void Start()
 	{
@@ -32,12 +32,12 @@ public class LightningBolt : MonoBehaviour
 
 		particleEmitter.Emit(zigs);
 		particles = particleEmitter.particles;
-		vehicles = new Rope[particles.Length];
+		vehicles = new Chain[particles.Length];
 		RandomizeParticlePositions();
 
 		for(int i = particles.Length - 1; i >= 0; i--)
 		{
-		    vehicles[i] = new Rope(particles[i].position, 0.1f, null, null);
+		    vehicles[i] = new Chain(particles[i].position, 0.1f, null, null);
 		    
 		    vehicles[i].Mass     =  0.1f;
 		    vehicles[i].Radius   =  0.05f;
