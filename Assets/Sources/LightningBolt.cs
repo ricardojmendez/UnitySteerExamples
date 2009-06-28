@@ -16,6 +16,9 @@ public class LightningBolt : MonoBehaviour
 	public Light startLight;
 	public Light endLight;
 	
+	public float MaxForce =  5;
+	public float MaxSpeed = 10;
+	
 	Perlin noise;
 	float oneOverZigs;
 	
@@ -38,8 +41,8 @@ public class LightningBolt : MonoBehaviour
 		    
 		    vehicles[i].Mass     =  0.1f;
 		    vehicles[i].Radius   =  0.05f;
-		    vehicles[i].MaxSpeed = 10f;
-		    vehicles[i].MaxForce =  5;
+		    vehicles[i].MaxSpeed =  MaxSpeed;
+		    vehicles[i].MaxForce =  MaxForce;
 		    vehicles[i].PreviousStrength = 0.5f;
 		    vehicles[i].NextStrength     = 1.0f;
 
@@ -58,7 +61,7 @@ public class LightningBolt : MonoBehaviour
 	
 	void Update ()
 	{
-	    //RandomizeParticlePositions(false);
+	    //RandomizeParticlePositions(true);
 
 		for(int i = particles.Length - 1; i >= 0; i--)
 		{
@@ -101,10 +104,6 @@ public class LightningBolt : MonoBehaviour
 		float timex = Time.time * speed * 0.1365143f;
 		float timey = Time.time * speed * 1.21688f;
 		float timez = Time.time * speed * 2.5564f;
-		/*
-		float timey = Time.time * speed * 0.21688f;
-		float timez = Time.time * speed * 0.2564f;
-		*/
 		
 		for (int i = startIndex; i < particles.Length; i++)
 		{
@@ -113,7 +112,10 @@ public class LightningBolt : MonoBehaviour
 			Vector3 offset = new Vector3(noise.Noise(timex + position.x, timex + position.y, timex + position.z),
 										noise.Noise(timey + position.x, timey + position.y, timey + position.z),
 										noise.Noise(timez + position.x, timez + position.y, timez + position.z));
-			position += (offset * scale * ((float)i * oneOverZigs));
+			
+			Vector3 displacement = isOffset ? offset * scale
+			                        : (offset * scale * ((float)i * oneOverZigs));
+			position += displacement;
 			
 			particles[i].position = position;
 			particles[i].color = Color.white;
