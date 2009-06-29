@@ -10,6 +10,7 @@ using System.Collections;
 public class LightningBolt : MonoBehaviour
 {
 	public WanderBehavior target;
+	public WanderBehavior tether;
 	public int zigs = 100;
 	public float speed = 1f;
 	public float scale = 1f;
@@ -45,6 +46,7 @@ public class LightningBolt : MonoBehaviour
 		    vehicles[i].MaxForce =  MaxForce;
 		    vehicles[i].PreviousStrength = 0.5f;
 		    vehicles[i].NextStrength     = 1.0f;
+            vehicles[i].MaxDistance      = 0.25f;
 
             if (i < particles.Length - 1)
             {
@@ -55,7 +57,10 @@ public class LightningBolt : MonoBehaviour
             {
 		        vehicles[i].Next = target.Wanderer;
             }
-		    
+		}
+		if (tether != null)
+		{
+		    vehicles[0].Previous = tether.Wanderer;
 		}
 	}
 	
