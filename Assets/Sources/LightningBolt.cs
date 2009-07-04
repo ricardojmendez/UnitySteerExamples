@@ -19,6 +19,7 @@ public class LightningBolt : MonoBehaviour
 	
 	public float MaxForce =  5;
 	public float MaxSpeed = 10;
+	public float MaxDistance = 0.25f;
 	
 	Perlin noise;
 	float oneOverZigs;
@@ -44,9 +45,9 @@ public class LightningBolt : MonoBehaviour
 		    vehicles[i].Radius   =  0.05f;
 		    vehicles[i].MaxSpeed =  MaxSpeed;
 		    vehicles[i].MaxForce =  MaxForce;
+            vehicles[i].MaxDistance      = MaxDistance;
 		    vehicles[i].PreviousStrength = 0.5f;
 		    vehicles[i].NextStrength     = 1.0f;
-            vehicles[i].MaxDistance      = 0.25f;
 
             if (i < particles.Length - 1)
             {
