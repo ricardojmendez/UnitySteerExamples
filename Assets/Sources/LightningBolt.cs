@@ -1,6 +1,6 @@
 /*
 	This script is placed in public domain. The author takes no responsibility for any possible harm.
-	Contributed by Jonathan Czeck
+	Contributed by Jonathan Czeck.  Updated for UnitySteer by Ricardo J. Méndez.
 */
 using UnityEngine;
 using UnitySteer;
@@ -9,7 +9,7 @@ using System.Collections;
 
 public class LightningBolt : MonoBehaviour
 {
-	public WanderBehavior target;
+	public VehicleBehaviour target;
 	public WanderBehavior tether;
 	public int zigs = 100;
 	public float speed = 1f;
@@ -56,12 +56,12 @@ public class LightningBolt : MonoBehaviour
             }
             else
             {
-		        vehicles[i].Next = target.Wanderer;
+		        vehicles[i].Next = target.Vehicle as SimpleVehicle;
             }
 		}
 		if (tether != null)
 		{
-		    vehicles[0].Previous = tether.Wanderer;
+		    vehicles[0].Previous = tether.Vehicle as SimpleVehicle;
 		}
 	}
 	
@@ -114,7 +114,7 @@ public class LightningBolt : MonoBehaviour
 		for (int i = startIndex; i < particles.Length; i++)
 		{
 		    Vector3 position = isOffset ? particles[i].position
-		                            : Vector3.Lerp(transform.position, target.Wanderer.Position, oneOverZigs * (float)i);
+		                            : Vector3.Lerp(transform.position, target.Vehicle.Position, oneOverZigs * (float)i);
 			Vector3 offset = new Vector3(noise.Noise(timex + position.x, timex + position.y, timex + position.z),
 										noise.Noise(timey + position.x, timey + position.y, timey + position.z),
 										noise.Noise(timez + position.x, timez + position.y, timez + position.z));
