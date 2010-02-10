@@ -1,0 +1,20 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+
+Project("{B7E71D49-A2A7-517D-246E-D8136B82A5D9}") = "UnitySteer", "UnitySteer.csproj", "{3A4B5EB5-9700-1AC9-2487-586BB3F0FF1B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A4B5EB5-9700-1AC9-2487-586BB3F0FF1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A4B5EB5-9700-1AC9-2487-586BB3F0FF1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A4B5EB5-9700-1AC9-2487-586BB3F0FF1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A4B5EB5-9700-1AC9-2487-586BB3F0FF1B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
