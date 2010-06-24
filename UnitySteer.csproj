@@ -18,7 +18,7 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE</DefineConstants>
+	<DefineConstants>DEBUG;TRACE;UNITY_EDITOR</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
   </PropertyGroup>
@@ -35,14 +35,19 @@
     <Reference Include="System.XML" />
 	<Reference Include="System.Core" />
 	<Reference Include="UnityEngine">
-	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/UnityEngine-Debug.dll</HintPath>
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/UnityEditor.dll</HintPath>
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+	<Reference Include="Boo.Lang">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/Boo.Lang.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityScript">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/UnityScript.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <None Include="Assets\Scripts\License.txt" />
      <Compile Include="Assets\Scripts\Behaviors\BoidBehaviour.cs" />
      <Compile Include="Assets\Scripts\Behaviors\ComboBehaviour.cs" />
      <Compile Include="Assets\Scripts\Behaviors\PursuerBehavior.cs" />
@@ -72,6 +77,7 @@
      <Compile Include="Assets\Sources\Perlin.cs" />
      <None Include="Assets\Sources\GUIControls.js" />
      <None Include="Assets\Sources\~ControlScripts\DragTransform.js" />
+     <None Include="Assets\Scripts\License.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
