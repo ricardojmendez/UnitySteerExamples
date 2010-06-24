@@ -18,7 +18,7 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE</DefineConstants>
+	<DefineConstants>DEBUG;TRACE;UNITY_3_0_0;UNITY_3_0;UNITY_EDITOR;ENABLE_PROFILER;UNITY_WEBPLAYER;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_TERRAIN;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_WWW</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
   </PropertyGroup>
@@ -35,22 +35,43 @@
     <Reference Include="System.XML" />
 	<Reference Include="System.Core" />
 	<Reference Include="UnityEngine">
-	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/UnityEngine-Debug.dll</HintPath>
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/UnityEditor.dll</HintPath>
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+	<Reference Include="Boo.Lang">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/Boo.Lang.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityScript">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/UnityScript.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <None Include="Assets\Scripts\License.txt" />
-     <Compile Include="Assets\Scripts\Behaviors\BoidBehaviour.cs" />
      <Compile Include="Assets\Scripts\Behaviors\ComboBehaviour.cs" />
      <Compile Include="Assets\Scripts\Behaviors\PursuerBehavior.cs" />
-     <Compile Include="Assets\Scripts\Behaviors\Radar.cs" />
-     <Compile Include="Assets\Scripts\Behaviors\TestMoveToPointObstacles.cs" />
      <Compile Include="Assets\Scripts\Behaviors\VehicleBehaviour.cs" />
      <Compile Include="Assets\Scripts\Behaviors\WanderBehavior.cs" />
      <Compile Include="Assets\Scripts\Behaviors\WanderRadarBehavior.cs" />
+     <Compile Include="Assets\Scripts\UnitySteer\Behaviors\Radar.cs" />
+     <Compile Include="Assets\Scripts\UnitySteer\Behaviors\RadarPing.cs" />
+     <Compile Include="Assets\Scripts\UnitySteer\Behaviors\SteerForAlignment.cs" />
+     <Compile Include="Assets\Scripts\UnitySteer\Behaviors\SteerForCohesion.cs" />
+     <Compile Include="Assets\Scripts\UnitySteer\Behaviors\SteerForNeighbors.cs" />
+     <Compile Include="Assets\Scripts\UnitySteer\Behaviors\SteerForSeparation.cs" />
+     <Compile Include="Assets\Scripts\UnitySteer\Behaviors\SteerForTarget.cs" />
+     <Compile Include="Assets\Scripts\UnitySteer\Behaviors\SteerForTether.cs" />
+     <Compile Include="Assets\Scripts\UnitySteer\Behaviors\Steering.cs" />
+     <Compile Include="Assets\Scripts\UnitySteer\Behaviors\Vehicle.cs" />
+     <Compile Include="Assets\Scripts\UnitySteer\Helpers\IRadarReceiver.cs" />
+     <Compile Include="Assets\Scripts\UnitySteer\Helpers\ITick.cs" />
+     <Compile Include="Assets\Scripts\UnitySteer\Helpers\RandomizePosition.cs" />
+     <Compile Include="Assets\Scripts\UnitySteer\Helpers\Tick.cs" />
+     <Compile Include="Assets\Scripts\UnitySteer\Helpers\VehicleHelper.cs" />
+     <Compile Include="Assets\Scripts\UnitySteer\Vehicles\Chain.cs" />
+     <Compile Include="Assets\Scripts\UnitySteer\Vehicles\ComboVehicle.cs" />
+     <Compile Include="Assets\Scripts\UnitySteer\Vehicles\MultiplePursuit.cs" />
+     <Compile Include="Assets\Scripts\UnitySteer\Vehicles\PathFollower.cs" />
      <Compile Include="Assets\Scripts\UnitySteer\AngryAntPathway.cs" />
      <Compile Include="Assets\Scripts\UnitySteer\Obstacle.cs" />
      <Compile Include="Assets\Scripts\UnitySteer\OpenSteerUtility.cs" />
@@ -59,19 +80,15 @@
      <Compile Include="Assets\Scripts\UnitySteer\Proximity.cs" />
      <Compile Include="Assets\Scripts\UnitySteer\SimpleVehicle.cs" />
      <Compile Include="Assets\Scripts\UnitySteer\SteerLibrary.cs" />
-     <Compile Include="Assets\Scripts\UnitySteer\Vehicle.cs" />
+     <Compile Include="Assets\Scripts\UnitySteer\SteeringVehicle.cs" />
      <Compile Include="Assets\Scripts\UnitySteer\lq.cs" />
      <Compile Include="Assets\Scripts\UnitySteer\lqProximity.cs" />
-     <Compile Include="Assets\Scripts\UnitySteer\Vehicles\Boid.cs" />
-     <Compile Include="Assets\Scripts\UnitySteer\Vehicles\Chain.cs" />
-     <Compile Include="Assets\Scripts\UnitySteer\Vehicles\ComboVehicle.cs" />
-     <Compile Include="Assets\Scripts\UnitySteer\Vehicles\MovesToPoint.cs" />
-     <Compile Include="Assets\Scripts\UnitySteer\Vehicles\MultiplePursuit.cs" />
-     <Compile Include="Assets\Scripts\UnitySteer\Vehicles\PathFollower.cs" />
+     <None Include="Assets\Scripts\License.txt" />
+     <None Include="Assets\Scripts\README.TXT" />
+     <None Include="Assets\Sources\~ControlScripts\DragTransform.js" />
+     <None Include="Assets\Sources\GUIControls.js" />
      <Compile Include="Assets\Sources\LightningBolt.cs" />
      <Compile Include="Assets\Sources\Perlin.cs" />
-     <None Include="Assets\Sources\GUIControls.js" />
-     <None Include="Assets\Sources\~ControlScripts\DragTransform.js" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

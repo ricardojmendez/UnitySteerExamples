@@ -3,28 +3,31 @@
   <MonoDevelop.Ide.DebuggingService>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UnitySteer/Vehicle.cs" ctype="Workbench">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UnitySteer/SimpleVehicle.cs" ctype="Workbench">
     <Files>
-      <File FileName="Assets/Scripts/Behaviors/TestMoveToPointObstacles.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/UnitySteer/SteerLibrary.cs" Line="47" Column="3" />
-      <File FileName="Assets/Scripts/UnitySteer/Vehicles/ComboVehicle.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/UnitySteer/Vehicles/Boid.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/UnitySteer/AngryAntPathway.cs" Line="1" Column="1" />
-      <File FileName="Assets/Sources/LightningBolt.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/UnitySteer/SimpleVehicle.cs" Line="43" Column="1" />
-      <File FileName="Assets/Scripts/UnitySteer/Vehicle.cs" Line="56" Column="3" />
+      <File FileName="../../../.Trash/TestMoveToPointObstacles.cs" Line="12" Column="1" />
+      <File FileName="Assets/Scripts/UnitySteer/Behaviors/SteerForTarget.cs" Line="4" Column="39" />
+      <File FileName="Assets/Scripts/UnitySteer/Behaviors/Vehicle.cs" Line="243" Column="4" />
+      <File FileName="Assets/Scripts/UnitySteer/Behaviors/Steering.cs" Line="70" Column="16" />
+      <File FileName="Assets/Scripts/UnitySteer/Behaviors/SteerForCohesion.cs" Line="8" Column="15" />
+      <File FileName="Assets/Scripts/UnitySteer/SimpleVehicle.cs" Line="222" Column="13" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="UnitySteer" expanded="True">
+            <Node name="References" expanded="True" />
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
                 <Node name="Behaviors" expanded="True" />
                 <Node name="UnitySteer" expanded="True">
-                  <Node name="Vehicle.cs" selected="True" />
+                  <Node name="Behaviors" expanded="True" />
+                  <Node name="Helpers" expanded="True" />
+                  <Node name="Vehicles" expanded="True" />
+                  <Node name="SimpleVehicle.cs" selected="True" />
                 </Node>
               </Node>
+              <Node name="Sources" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -35,9 +38,10 @@
       <Pad Id="MonoDevelop.Debugger.WatchPad">
         <State />
       </Pad>
-      <Pad Id="MonoDevelop.NUnit.TestPad">
-        <State selected="True" />
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches ctype="PinnedWatchStore" />
 </Properties>

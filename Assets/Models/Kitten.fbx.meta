@@ -1,0 +1,197 @@
+fileFormatVersion: 1
+guid: 8bca2e4103e2e41d88040c4948b664a9
+ModelImporter:
+  importerVersion: 4
+  meshes:
+    scaleFactor: 0.01
+    meshCompression: 0
+    generateColliders: 0
+    swapUVs: 0
+  tangentSpace:
+    generation: 0
+    calculateNormals: 0
+    smoothingAngle: 60
+    splitTangents: 0
+  materials:
+    generation: 1
+  animations:
+    generation: 3
+    bakeAnimations: 0
+    animationCompression: 1
+    animationWrapMode: 0
+    splitAnimations: 1
+    clips:
+      idle:
+        firstFrame: 0
+        lastFrame: 271
+        loop: 0
+        wrapMode: 0
+      carry:
+        firstFrame: 285
+        lastFrame: 347
+        loop: 0
+        wrapMode: 0
+      misc:
+        firstFrame: 357
+        lastFrame: 527
+        loop: 0
+        wrapMode: 0
+      playing:
+        firstFrame: 532
+        lastFrame: 692
+        loop: 0
+        wrapMode: 0
+      sleeping:
+        firstFrame: 702
+        lastFrame: 759
+        loop: 0
+        wrapMode: 0
+      walking:
+        firstFrame: 764
+        lastFrame: 814
+        loop: 0
+        wrapMode: 0
+      eating:
+        firstFrame: 819
+        lastFrame: 955
+        loop: 0
+        wrapMode: 0
+  nodeInfo:
+    Bip01:
+    - 100000
+    - 400000
+    Bip01 Footsteps:
+    - 100002
+    - 400002
+    Bip01 Head:
+    - 100004
+    - 400004
+    Bip01 HeadNub:
+    - 100006
+    - 400006
+    Bip01 L Calf:
+    - 100008
+    - 400008
+    Bip01 L Clavicle:
+    - 100010
+    - 400010
+    Bip01 L Finger0:
+    - 100012
+    - 400012
+    Bip01 L Finger0Nub:
+    - 100014
+    - 400014
+    Bip01 L Foot:
+    - 100016
+    - 400016
+    Bip01 L Forearm:
+    - 100018
+    - 400018
+    Bip01 L Hand:
+    - 100020
+    - 400020
+    Bip01 L Thigh:
+    - 100022
+    - 400022
+    Bip01 L Toe0:
+    - 100024
+    - 400024
+    Bip01 L Toe0Nub:
+    - 100026
+    - 400026
+    Bip01 L UpperArm:
+    - 100028
+    - 400028
+    Bip01 Neck:
+    - 100030
+    - 400030
+    Bip01 Pelvis:
+    - 100032
+    - 400032
+    Bip01 R Calf:
+    - 100034
+    - 400034
+    Bip01 R Clavicle:
+    - 100036
+    - 400036
+    Bip01 R Finger0:
+    - 100038
+    - 400038
+    Bip01 R Finger0Nub:
+    - 100040
+    - 400040
+    Bip01 R Foot:
+    - 100042
+    - 400042
+    Bip01 R Forearm:
+    - 100044
+    - 400044
+    Bip01 R Hand:
+    - 100046
+    - 400046
+    Bip01 R Thigh:
+    - 100048
+    - 400048
+    Bip01 R Toe0:
+    - 100050
+    - 400050
+    Bip01 R Toe0Nub:
+    - 100052
+    - 400052
+    Bip01 R UpperArm:
+    - 100054
+    - 400054
+    Bip01 Spine:
+    - 100056
+    - 400056
+    Bip01 Spine1:
+    - 100058
+    - 400058
+    Bip01 Spine2:
+    - 100060
+    - 400060
+    Bip01 Spine3:
+    - 100062
+    - 400062
+    Bip01 Tail:
+    - 100064
+    - 400064
+    Bip01 Tail1:
+    - 100066
+    - 400066
+    Bip01 Tail2:
+    - 100068
+    - 400068
+    Bip01 Tail3:
+    - 100070
+    - 400070
+    Bip01 TailNub:
+    - 100072
+    - 400072
+    //RootNode:
+    - 100074
+    - 400074
+    - 11100000
+    cuerpo:
+    - 100076
+    - 400076
+    - 13700000
+AssetImporter:
+  importerVersion: 1
+  fileIDToRecycleName:
+    4300000: cuerpo
+    7400000: Take 001 //// CALL_ALL_ANIMATIONS_OK8_2
+    7400002: idle //// Cat
+    7400004: carry //// Cat
+    7400006: misc //// Cat
+    7400008: playing //// Cat
+    7400010: sleeping //// Cat
+    7400012: walking //// Cat
+    7400014: eating //// Cat
+    7400016: idle //// Kitten
+    7400018: carry //// Kitten
+    7400020: misc //// Kitten
+    7400022: playing //// Kitten
+    7400024: sleeping //// Kitten
+    7400026: walking //// Kitten
+    7400028: eating //// Kitten
