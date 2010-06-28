@@ -3,18 +3,17 @@
   <MonoDevelop.Ide.DebuggingService>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UnitySteer/Vehicles/PathFollower.cs" ctype="Workbench">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UnitySteer/Behaviors/Vehicle.cs" ctype="Workbench">
     <Files>
-      <File FileName="Assets/Scripts/UnitySteer/Behaviors/Vehicle.cs" Line="358" Column="7" />
-      <File FileName="Assets/Scripts/UnitySteer/SteerLibrary.cs" Line="636" Column="1" />
+      <File FileName="Assets/Scripts/UnitySteer/Behaviors/Vehicle.cs" Line="356" Column="35" />
       <File FileName="Assets/Scripts/UnitySteer/OpenSteerUtility.cs" Line="119" Column="17" />
       <File FileName="Assets/Scripts/UnitySteer/Behaviors/SteerForPursuit.cs" Line="138" Column="34" />
-      <File FileName="Assets/Scripts/UnitySteer/SimpleVehicle.cs" Line="355" Column="43" />
       <File FileName="Assets/Scripts/UnitySteer/Behaviors/SteerForAlignment.cs" Line="31" Column="34" />
       <File FileName="Assets/Scripts/UnitySteer/Behaviors/SteerForCohesion.cs" Line="30" Column="34" />
       <File FileName="Assets/Scripts/UnitySteer/Behaviors/SteerForSeparation.cs" Line="29" Column="34" />
       <File FileName="Assets/Scripts/License.txt" Line="12" Column="1" />
-      <File FileName="Assets/Scripts/UnitySteer/Vehicles/PathFollower.cs" Line="227" Column="52" />
+      <File FileName="Assets/Scripts/UnitySteer/Behaviors/Radar.cs" Line="21" Column="12" />
+      <File FileName="Assets/Scripts/UnitySteer/Behaviors/Steering.cs" Line="22" Column="20" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -23,9 +22,10 @@
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
                 <Node name="UnitySteer" expanded="True">
-                  <Node name="Vehicles" expanded="True">
-                    <Node name="PathFollower.cs" selected="True" />
+                  <Node name="Behaviors" expanded="True">
+                    <Node name="Vehicle.cs" selected="True" />
                   </Node>
+                  <Node name="Vehicles" expanded="True" />
                 </Node>
               </Node>
               <Node name="Sources" expanded="True" />
