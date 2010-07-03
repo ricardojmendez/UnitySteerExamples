@@ -56,6 +56,7 @@
      <Compile Include="Assets\Scripts\UnitySteer\Behaviors\SteerForNeighbors.cs" />
      <Compile Include="Assets\Scripts\UnitySteer\Behaviors\SteerForPursuit.cs" />
      <Compile Include="Assets\Scripts\UnitySteer\Behaviors\SteerForSeparation.cs" />
+     <Compile Include="Assets\Scripts\UnitySteer\Behaviors\SteerForSphericalObstacleAvoidance.cs" />
      <Compile Include="Assets\Scripts\UnitySteer\Behaviors\SteerForTarget.cs" />
      <Compile Include="Assets\Scripts\UnitySteer\Behaviors\SteerForTether.cs" />
      <Compile Include="Assets\Scripts\UnitySteer\Behaviors\SteerForWander.cs" />
@@ -66,7 +67,6 @@
      <Compile Include="Assets\Scripts\UnitySteer\Helpers\ITick.cs" />
      <Compile Include="Assets\Scripts\UnitySteer\Helpers\RandomizePosition.cs" />
      <Compile Include="Assets\Scripts\UnitySteer\Helpers\Tick.cs" />
-     <Compile Include="Assets\Scripts\UnitySteer\UnderReview\Obstacle.cs" />
      <Compile Include="Assets\Scripts\UnitySteer\UnderReview\Proximity.cs" />
      <Compile Include="Assets\Scripts\UnitySteer\UnderReview\SimpleVehicle.cs" />
      <Compile Include="Assets\Scripts\UnitySteer\UnderReview\SteerLibrary.cs" />
@@ -74,6 +74,7 @@
      <Compile Include="Assets\Scripts\UnitySteer\UnderReview\lq.cs" />
      <Compile Include="Assets\Scripts\UnitySteer\UnderReview\lqProximity.cs" />
      <Compile Include="Assets\Scripts\UnitySteer\AngryAntPathway.cs" />
+     <Compile Include="Assets\Scripts\UnitySteer\Obstacle.cs" />
      <Compile Include="Assets\Scripts\UnitySteer\OpenSteerUtility.cs" />
      <Compile Include="Assets\Scripts\UnitySteer\PathWay.cs" />
      <Compile Include="Assets\Scripts\UnitySteer\PolylinePathway.cs" />
