@@ -18,7 +18,7 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE;UNITY_3_0_0;UNITY_3_0;UNITY_EDITOR;ENABLE_PROFILER;UNITY_WEBPLAYER;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_TERRAIN;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_WWW</DefineConstants>
+	<DefineConstants>DEBUG;TRACE;UNITY_3_0_0;UNITY_3_0;UNITY_EDITOR;IPHONE_MONO_26;ENABLE_PROFILER;UNITY_STANDALONE_OSX;ENABLE_GENERICS;ENABLE_DUCK_TYPING;ENABLE_TERRAIN;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CLOTH;ENABLE_WWW</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
   </PropertyGroup>
@@ -53,6 +53,7 @@
      <Compile Include="Assets\Scripts\UnitySteer\Behaviors\SteerForAlignment.cs" />
      <Compile Include="Assets\Scripts\UnitySteer\Behaviors\SteerForCohesion.cs" />
      <Compile Include="Assets\Scripts\UnitySteer\Behaviors\SteerForEvasion.cs" />
+     <Compile Include="Assets\Scripts\UnitySteer\Behaviors\SteerForNeighborAvoidance.cs" />
      <Compile Include="Assets\Scripts\UnitySteer\Behaviors\SteerForNeighbors.cs" />
      <Compile Include="Assets\Scripts\UnitySteer\Behaviors\SteerForPursuit.cs" />
      <Compile Include="Assets\Scripts\UnitySteer\Behaviors\SteerForSeparation.cs" />
