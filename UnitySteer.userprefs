@@ -3,17 +3,16 @@
   <MonoDevelop.Ide.DebuggingService>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UnitySteer/Behaviors/SteerForEvasion.cs" ctype="Workbench">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Behaviors/CharacterMotorVehicle.cs" ctype="Workbench">
     <Files>
-      <File FileName="Assets/Scripts/UnitySteer/Behaviors/Vehicle.cs" Line="266" Column="1" />
-      <File FileName="Assets/Scripts/UnitySteer/Helpers/Tick.cs" Line="21" Column="29" />
-      <File FileName="Assets/Scripts/UnitySteer/Behaviors/RadarPing.cs" Line="16" Column="35" />
-      <File FileName="Assets/Scripts/UnitySteer/Behaviors/Radar.cs" Line="140" Column="4" />
-      <File FileName="Assets/Scripts/UnitySteer/Behaviors/SteerForAlignment.cs" Line="7" Column="41" />
-      <File FileName="Assets/Scripts/UnitySteer/Behaviors/SteerForCohesion.cs" Line="3" Column="1" />
-      <File FileName="Assets/Scripts/UnitySteer/Behaviors/SteerForSeparation.cs" Line="2" Column="19" />
-      <File FileName="Assets/Scripts/UnitySteer/Behaviors/SteerForNeighbors.cs" Line="109" Column="5" />
-      <File FileName="Assets/Scripts/UnitySteer/Behaviors/SteerForEvasion.cs" Line="23" Column="31" />
+      <File FileName="Assets/Scripts/Behaviors/SteerForCohesion.cs" Line="13" Column="3" />
+      <File FileName="Assets/Scripts/Behaviors/SteerForEvasion.cs" Line="20" Column="15" />
+      <File FileName="Assets/Scripts/Behaviors/SteerForNeighborAvoidance.cs" Line="181" Column="3" />
+      <File FileName="Assets/Scripts/Behaviors/SteerForAlignment.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Behaviors/SteerForSeparation.cs" Line="16" Column="44" />
+      <File FileName="Assets/Scripts/Behaviors/SteerToFollowPath.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Behaviors/Vehicle.cs" Line="290" Column="1" />
+      <File FileName="Assets/Scripts/Behaviors/CharacterMotorVehicle.cs" Line="28" Column="50" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -21,12 +20,8 @@
           <Node name="UnitySteer" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="UnitySteer" expanded="True">
-                  <Node name="Behaviors" expanded="True">
-                    <Node name="SteerForEvasion.cs" selected="True" />
-                  </Node>
-                  <Node name="Helpers" expanded="True" />
-                  <Node name="UnderReview" expanded="True" />
+                <Node name="Behaviors" expanded="True">
+                  <Node name="CharacterMotorVehicle.cs" selected="True" />
                 </Node>
               </Node>
             </Node>
