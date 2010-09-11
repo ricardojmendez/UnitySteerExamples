@@ -18,7 +18,7 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE;UNITY_3_0_0;UNITY_3_0;UNITY_EDITOR;IPHONE_MONO_26;ENABLE_PROFILER;UNITY_STANDALONE_OSX;ENABLE_GENERICS;ENABLE_DUCK_TYPING;ENABLE_TERRAIN;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CLOTH;ENABLE_WWW</DefineConstants>
+	<DefineConstants>DEBUG;TRACE;UNITY_3_0_0;UNITY_3_0;UNITY_EDITOR;ENABLE_PROFILER;UNITY_STANDALONE_OSX;ENABLE_GENERICS;ENABLE_DUCK_TYPING;ENABLE_TERRAIN;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CLOTH;ENABLE_WWW</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
   </PropertyGroup>
@@ -49,7 +49,6 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Behaviors\AutonomousVehicle.cs" />
-     <Compile Include="Assets\Scripts\Behaviors\CharacterMotorVehicle.cs" />
      <Compile Include="Assets\Scripts\Behaviors\Radar.cs" />
      <Compile Include="Assets\Scripts\Behaviors\RadarPing.cs" />
      <Compile Include="Assets\Scripts\Behaviors\SteerForAlignment.cs" />
@@ -57,6 +56,7 @@
      <Compile Include="Assets\Scripts\Behaviors\SteerForEvasion.cs" />
      <Compile Include="Assets\Scripts\Behaviors\SteerForNeighborAvoidance.cs" />
      <Compile Include="Assets\Scripts\Behaviors\SteerForNeighbors.cs" />
+     <Compile Include="Assets\Scripts\Behaviors\SteerForPoint.cs" />
      <Compile Include="Assets\Scripts\Behaviors\SteerForPursuit.cs" />
      <Compile Include="Assets\Scripts\Behaviors\SteerForSeparation.cs" />
      <Compile Include="Assets\Scripts\Behaviors\SteerForSphericalObstacleAvoidance.cs" />
@@ -66,13 +66,14 @@
      <Compile Include="Assets\Scripts\Behaviors\SteerToFollowPath.cs" />
      <Compile Include="Assets\Scripts\Behaviors\Steering.cs" />
      <Compile Include="Assets\Scripts\Behaviors\Vehicle.cs" />
+     <None Include="Assets\Scripts\C5\LICENSE.txt" />
      <Compile Include="Assets\Scripts\Editor\AutonomousVehicleEditor.cs" />
-     <Compile Include="Assets\Scripts\Editor\CharacterMotorVehicleEditor.cs" />
      <Compile Include="Assets\Scripts\Editor\Vector3FoldoutEditor.cs" />
      <Compile Include="Assets\Scripts\Editor\VehicleEditor.cs" />
      <Compile Include="Assets\Scripts\Helpers\IRadarReceiver.cs" />
      <Compile Include="Assets\Scripts\Helpers\ITick.cs" />
      <Compile Include="Assets\Scripts\Helpers\RandomizePosition.cs" />
+     <Compile Include="Assets\Scripts\Helpers\SteeringEvent.cs" />
      <Compile Include="Assets\Scripts\Helpers\Tick.cs" />
      <Compile Include="Assets\Scripts\UnderReview\Proximity.cs" />
      <Compile Include="Assets\Scripts\UnderReview\SimpleVehicle.cs" />
@@ -92,6 +93,9 @@
      <None Include="Assets\Sources\~ControlScripts\DragTransform.js" />
      <None Include="Assets\Sources\GUIControls.js" />
      <Compile Include="Assets\Sources\Perlin.cs" />
+ <Reference Include="Assets\Scripts\C5\C5">
+ <HintPath>Assets\Scripts\C5\C5.dll</HintPath>
+ </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -101,5 +105,6 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  
 </Project>
 	

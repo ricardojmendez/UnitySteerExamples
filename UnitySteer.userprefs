@@ -1,36 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" ctype="Workspace" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" ctype="Workspace" />
   <MonoDevelop.Ide.DebuggingService>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Behaviors/CharacterMotorVehicle.cs" ctype="Workbench">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Behaviors/SteerForSeparation.cs" ctype="Workbench">
     <Files>
-      <File FileName="Assets/Scripts/Behaviors/SteerForCohesion.cs" Line="13" Column="3" />
-      <File FileName="Assets/Scripts/Behaviors/SteerForEvasion.cs" Line="20" Column="15" />
-      <File FileName="Assets/Scripts/Behaviors/SteerForNeighborAvoidance.cs" Line="181" Column="3" />
-      <File FileName="Assets/Scripts/Behaviors/SteerForAlignment.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Behaviors/SteerForSeparation.cs" Line="16" Column="44" />
-      <File FileName="Assets/Scripts/Behaviors/SteerToFollowPath.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Behaviors/Vehicle.cs" Line="290" Column="1" />
-      <File FileName="Assets/Scripts/Behaviors/CharacterMotorVehicle.cs" Line="28" Column="50" />
+      <File FileName="Assets/Scripts/Behaviors/SteerForSeparation.cs" Line="16" Column="39" />
     </Files>
     <Pads>
-      <Pad Id="ProjectPad">
-        <State expanded="True">
-          <Node name="UnitySteer" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True">
-                <Node name="Behaviors" expanded="True">
-                  <Node name="CharacterMotorVehicle.cs" selected="True" />
-                </Node>
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-      <Pad Id="ClassPad">
-        <State selected="True" />
-      </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
         <State />
       </Pad>
