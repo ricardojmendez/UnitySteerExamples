@@ -1,15 +1,16 @@
 fileFormatVersion: 1
 guid: 8bca2e4103e2e41d88040c4948b664a9
 ModelImporter:
-  importerVersion: 4
+  importerVersion: 7
   meshes:
     scaleFactor: 0.01
+    useFileUnits: 1
     meshCompression: 0
     generateColliders: 0
     swapUVs: 0
   tangentSpace:
-    generation: 0
-    calculateNormals: 0
+    normalImportMode: 0
+    tangentImportMode: 1
     smoothingAngle: 60
     splitTangents: 0
   materials:
@@ -18,7 +19,7 @@ ModelImporter:
     generation: 3
     bakeAnimations: 0
     animationCompression: 1
-    animationWrapMode: 0
+    animationWrapMode: 2
     splitAnimations: 1
     clips:
       idle:
@@ -50,7 +51,7 @@ ModelImporter:
         firstFrame: 764
         lastFrame: 814
         loop: 0
-        wrapMode: 0
+        wrapMode: 2
       eating:
         firstFrame: 819
         lastFrame: 955

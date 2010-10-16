@@ -5,7 +5,7 @@
   </MonoDevelop.Ide.DebuggingService>
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Behaviors/SteerForSeparation.cs" ctype="Workbench">
     <Files>
-      <File FileName="Assets/Scripts/Behaviors/SteerForSeparation.cs" Line="16" Column="39" />
+      <File FileName="Assets/Scripts/Behaviors/SteerForSeparation.cs" Line="22" Column="1" />
     </Files>
     <Pads>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
