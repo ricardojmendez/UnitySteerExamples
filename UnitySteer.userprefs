@@ -3,11 +3,30 @@
   <MonoDevelop.Ide.DebuggingService>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Behaviors/SteerForSeparation.cs" ctype="Workbench">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Behaviors/AutonomousVehicle.cs" ctype="Workbench">
     <Files>
+      <File FileName="Assets/Scripts/Behaviors/AutonomousVehicle.cs" Line="23" Column="3" />
       <File FileName="Assets/Scripts/Behaviors/SteerForSeparation.cs" Line="22" Column="1" />
+      <File FileName="Assets/Scripts/Behaviors/SteerForTarget.cs" Line="28" Column="24" />
+      <File FileName="Assets/Scripts/Behaviors/Vehicle.cs" Line="30" Column="18" />
     </Files>
     <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="UnitySteer" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="Behaviors" expanded="True">
+                  <Node name="AutonomousVehicle.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True" />
+      </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
         <State />
       </Pad>

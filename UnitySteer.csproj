@@ -51,6 +51,7 @@
      <Compile Include="Assets\Scripts\Behaviors\AutonomousVehicle.cs" />
      <Compile Include="Assets\Scripts\Behaviors\Radar.cs" />
      <Compile Include="Assets\Scripts\Behaviors\RadarPing.cs" />
+     <Compile Include="Assets\Scripts\Behaviors\SphericalObstacleData.cs" />
      <Compile Include="Assets\Scripts\Behaviors\SteerForAlignment.cs" />
      <Compile Include="Assets\Scripts\Behaviors\SteerForCohesion.cs" />
      <Compile Include="Assets\Scripts\Behaviors\SteerForEvasion.cs" />
