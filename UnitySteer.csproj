@@ -18,9 +18,10 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE;UNITY_3_0_0;UNITY_3_0;UNITY_EDITOR;ENABLE_PROFILER;UNITY_STANDALONE_OSX;ENABLE_GENERICS;ENABLE_DUCK_TYPING;ENABLE_TERRAIN;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CLOTH;ENABLE_WWW</DefineConstants>
+	<DefineConstants>DEBUG;TRACE;UNITY_3_3_0;UNITY_3_3;UNITY_EDITOR;ENABLE_PROFILER;UNITY_STANDALONE_OSX;ENABLE_GENERICS;ENABLE_DUCK_TYPING;ENABLE_TERRAIN;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CLOTH;ENABLE_WWW</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
 	<DebugType>pdbonly</DebugType>
@@ -29,6 +30,7 @@
 	<DefineConstants>TRACE</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
   </PropertyGroup>
   <ItemGroup>
 	<Reference Include="System" />
@@ -48,7 +50,10 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Behaviors\Examples\SteerForPathPredictiveTrivial.cs" />
+     <Compile Include="Assets\Scripts\Behaviors\Examples\SteerForPathTrivial.cs" />
      <Compile Include="Assets\Scripts\Behaviors\AutonomousVehicle.cs" />
+     <Compile Include="Assets\Scripts\Behaviors\DetectableObject.cs" />
      <Compile Include="Assets\Scripts\Behaviors\Radar.cs" />
      <Compile Include="Assets\Scripts\Behaviors\RadarPing.cs" />
      <Compile Include="Assets\Scripts\Behaviors\SphericalObstacleData.cs" />
@@ -57,18 +62,27 @@
      <Compile Include="Assets\Scripts\Behaviors\SteerForEvasion.cs" />
      <Compile Include="Assets\Scripts\Behaviors\SteerForNeighborAvoidance.cs" />
      <Compile Include="Assets\Scripts\Behaviors\SteerForNeighbors.cs" />
+     <Compile Include="Assets\Scripts\Behaviors\SteerForPathSimplified.cs" />
      <Compile Include="Assets\Scripts\Behaviors\SteerForPoint.cs" />
      <Compile Include="Assets\Scripts\Behaviors\SteerForPursuit.cs" />
      <Compile Include="Assets\Scripts\Behaviors\SteerForSeparation.cs" />
+     <Compile Include="Assets\Scripts\Behaviors\SteerForSpeed.cs" />
      <Compile Include="Assets\Scripts\Behaviors\SteerForSphericalObstacleAvoidance.cs" />
      <Compile Include="Assets\Scripts\Behaviors\SteerForTarget.cs" />
      <Compile Include="Assets\Scripts\Behaviors\SteerForTether.cs" />
      <Compile Include="Assets\Scripts\Behaviors\SteerForWander.cs" />
-     <Compile Include="Assets\Scripts\Behaviors\SteerToFollowPath.cs" />
      <Compile Include="Assets\Scripts\Behaviors\Steering.cs" />
      <Compile Include="Assets\Scripts\Behaviors\Vehicle.cs" />
+     <Compile Include="Assets\Scripts\Behaviors\VehicleLookAtOverride.cs" />
      <None Include="Assets\Scripts\C5\LICENSE.txt" />
      <Compile Include="Assets\Scripts\Editor\AutonomousVehicleEditor.cs" />
+     <Compile Include="Assets\Scripts\Editor\DegreeEditor.cs" />
+     <Compile Include="Assets\Scripts\Editor\DetectableObjectEditor.cs" />
+     <Compile Include="Assets\Scripts\Editor\SteerForAlignmentEditor.cs" />
+     <Compile Include="Assets\Scripts\Editor\SteerForCohesionEditor.cs" />
+     <Compile Include="Assets\Scripts\Editor\SteerForNeighborAvoidanceEditor.cs" />
+     <Compile Include="Assets\Scripts\Editor\SteerForNeighborsEditor.cs" />
+     <Compile Include="Assets\Scripts\Editor\SteerForSeparationEditor.cs" />
      <Compile Include="Assets\Scripts\Editor\Vector3FoldoutEditor.cs" />
      <Compile Include="Assets\Scripts\Editor\VehicleEditor.cs" />
      <Compile Include="Assets\Scripts\Helpers\IRadarReceiver.cs" />
@@ -79,16 +93,17 @@
      <Compile Include="Assets\Scripts\UnderReview\Proximity.cs" />
      <Compile Include="Assets\Scripts\UnderReview\SimpleVehicle.cs" />
      <Compile Include="Assets\Scripts\UnderReview\SteerLibrary.cs" />
+     <Compile Include="Assets\Scripts\UnderReview\SteerToFollowPath.cs" />
      <Compile Include="Assets\Scripts\UnderReview\SteeringVehicle.cs" />
      <Compile Include="Assets\Scripts\UnderReview\lq.cs" />
      <Compile Include="Assets\Scripts\UnderReview\lqProximity.cs" />
-     <Compile Include="Assets\Scripts\AngryAntPathway.cs" />
+     <None Include="Assets\Scripts\CHANGELOG.TXT" />
      <None Include="Assets\Scripts\License.txt" />
      <Compile Include="Assets\Scripts\Obstacle.cs" />
      <Compile Include="Assets\Scripts\OpenSteerUtility.cs" />
      <Compile Include="Assets\Scripts\PathWay.cs" />
-     <Compile Include="Assets\Scripts\PolylinePathway.cs" />
      <None Include="Assets\Scripts\README.TXT" />
+     <Compile Include="Assets\Scripts\Vector3Pathway.cs" />
      <Compile Include="Assets\Sources\Utils\CharacterMotor.cs" />
      <Compile Include="Assets\Sources\Utils\PlatformInputController.cs" />
      <None Include="Assets\Sources\~ControlScripts\DragTransform.js" />

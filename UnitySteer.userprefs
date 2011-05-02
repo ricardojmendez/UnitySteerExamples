@@ -1,14 +1,17 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" ctype="Workspace" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Behaviors/AutonomousVehicle.cs" ctype="Workbench">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Editor/Vector3FoldoutEditor.cs">
     <Files>
-      <File FileName="Assets/Scripts/Behaviors/AutonomousVehicle.cs" Line="23" Column="3" />
+      <File FileName="Assets/Scripts/Behaviors/AutonomousVehicle.cs" Line="37" Column="3" />
       <File FileName="Assets/Scripts/Behaviors/SteerForSeparation.cs" Line="22" Column="1" />
-      <File FileName="Assets/Scripts/Behaviors/SteerForTarget.cs" Line="28" Column="24" />
-      <File FileName="Assets/Scripts/Behaviors/Vehicle.cs" Line="30" Column="18" />
+      <File FileName="Assets/Scripts/Editor/VehicleEditor.cs" Line="23" Column="3" />
+      <File FileName="Assets/Scripts/Editor/Vector3FoldoutEditor.cs" Line="13" Column="21" />
+      <File FileName="Assets/Scripts/Behaviors/SteerForSphericalObstacleAvoidance.cs" Line="68" Column="85" />
+      <File FileName="Assets/Scripts/Obstacle.cs" Line="82" Column="48" />
+      <File FileName="Assets/Scripts/Behaviors/Radar.cs" Line="108" Column="23" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,7 +20,7 @@
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
                 <Node name="Behaviors" expanded="True">
-                  <Node name="AutonomousVehicle.cs" selected="True" />
+                  <Node name="SteerForSphericalObstacleAvoidance.cs" selected="True" />
                 </Node>
               </Node>
             </Node>
@@ -35,5 +38,5 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches ctype="PinnedWatchStore" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
