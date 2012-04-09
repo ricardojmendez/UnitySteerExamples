@@ -3,25 +3,35 @@
   <MonoDevelop.Ide.DebuggingService>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Editor/Vector3FoldoutEditor.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Behaviors/SteerForSphericalObstacleAvoidance.cs">
     <Files>
-      <File FileName="Assets/Scripts/Behaviors/AutonomousVehicle.cs" Line="37" Column="3" />
-      <File FileName="Assets/Scripts/Behaviors/SteerForSeparation.cs" Line="22" Column="1" />
-      <File FileName="Assets/Scripts/Editor/VehicleEditor.cs" Line="23" Column="3" />
-      <File FileName="Assets/Scripts/Editor/Vector3FoldoutEditor.cs" Line="13" Column="21" />
-      <File FileName="Assets/Scripts/Behaviors/SteerForSphericalObstacleAvoidance.cs" Line="68" Column="85" />
-      <File FileName="Assets/Scripts/Obstacle.cs" Line="82" Column="48" />
-      <File FileName="Assets/Scripts/Behaviors/Radar.cs" Line="108" Column="23" />
+      <File FileName="Assets/Scripts/Behaviors/AutonomousVehicle.cs" Line="36" Column="3" />
+      <File FileName="Assets/Scripts/Behaviors/Vehicle.cs" Line="285" Column="11" />
+      <File FileName="Assets/Scripts/Behaviors/TickedVehicle.cs" Line="112" Column="2" />
+      <File FileName="Assets/Scripts/Behaviors/Biped.cs" Line="10" Column="15" />
+      <File FileName="Assets/Scripts/Behaviors/SteerForSphericalObstacleAvoidance.cs" Line="46" Column="12" />
+      <File FileName="Assets/Scripts/Behaviors/DetectableObject.cs" Line="162" Column="1" />
+      <File FileName="Assets/Scripts/Editor/DetectableObjectEditor.cs" Line="1" Column="19" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
-          <Node name="UnitySteer" expanded="True">
+          <Node name="Assembly-CSharp" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
                 <Node name="Behaviors" expanded="True">
                   <Node name="SteerForSphericalObstacleAvoidance.cs" selected="True" />
                 </Node>
+                <Node name="Helpers" expanded="True" />
+              </Node>
+              <Node name="Sources" expanded="True" />
+            </Node>
+          </Node>
+          <Node name="Assembly-CSharp-Editor" expanded="True">
+            <Node name="References" expanded="True" />
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="Editor" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -32,6 +42,9 @@
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
         <State />
+      </Pad>
+      <Pad Id="ConnectionManagerPad">
+        <State selected="True" />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
