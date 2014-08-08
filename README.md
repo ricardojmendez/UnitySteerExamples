@@ -23,3 +23,5 @@ Or you could use an application like [SourceTree](http://www.sourcetreeapp.com/)
 
 UnitySteer is released under the
 [MIT license](http://opensource.org/licenses/MIT). See License.txt.
+
+Includes [GoKit](https://github.com/prime31/GoKit), which has its own license. See [GoKit's repository](https://github.com/prime31/GoKit) for details.
