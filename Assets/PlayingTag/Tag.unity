@@ -118,7 +118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Radius: {x: 10, y: 10, z: 10}
-  IsPlanar: 0
+  AllowedAxes: {x: 1, y: 1, z: 1}
   RandomizeRotation: 1
 --- !u!54 &11944890
 Rigidbody:
@@ -230,15 +230,14 @@ MonoBehaviour:
   _movementPriority: 0
   _turnTime: .400000006
   _mass: 1
-  _isPlanar: 0
-  _allowedMovement: {x: 1, y: 1, z: 1}
+  _allowedMovementAxes: {x: 1, y: 1, z: 1}
   _arrivalRadius: .25
   _maxSpeed: 6
   _maxForce: 20
   _canMove: 1
   _queueName: Steering
   _tickLength: .0500000007
-  _maxQueueProcessedPerUpdate: 100
+  _maxQueueProcessedPerUpdate: 20
   _traceAdjustments: 0
   _accelerationRate: 4
   _decelerationRate: 8
@@ -276,6 +275,7 @@ Transform:
   m_Children:
   - {fileID: 111159430}
   m_Father: {fileID: 0}
+  m_RootOrder: 2
 --- !u!114 &11944899
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -390,9 +390,8 @@ TrailRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
   m_SortingLayerID: 0
+  m_SortingOrder: 0
   m_Time: 5
   m_StartWidth: .150000006
   m_EndWidth: .0500000007
@@ -442,6 +441,7 @@ Transform:
   m_LocalScale: {x: .25, y: .25, z: .25}
   m_Children: []
   m_Father: {fileID: 11944898}
+  m_RootOrder: 0
 --- !u!23 &111159431
 Renderer:
   m_ObjectHideFlags: 0
@@ -461,9 +461,8 @@ Renderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
   m_SortingLayerID: 0
+  m_SortingOrder: 0
 --- !u!33 &111159432
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -499,6 +498,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 672077210}
+  m_RootOrder: 2
 --- !u!108 &381292152
 Light:
   m_ObjectHideFlags: 0
@@ -564,6 +564,7 @@ Transform:
   - {fileID: 1898782029}
   - {fileID: 381292151}
   m_Father: {fileID: 0}
+  m_RootOrder: 1
 --- !u!1 &914656091
 GameObject:
   m_ObjectHideFlags: 0
@@ -591,6 +592,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 672077210}
+  m_RootOrder: 0
 --- !u!108 &914656093
 Light:
   m_ObjectHideFlags: 0
@@ -747,8 +749,11 @@ Camera:
     m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
   m_HDR: 0
   m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: .0219999999
 --- !u!4 &1150723841
 Transform:
   m_ObjectHideFlags: 0
@@ -760,6 +765,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+  m_RootOrder: 3
 --- !u!114 &1150723842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -771,39 +777,6 @@ MonoBehaviour:
   m_Script: {fileID: -923714165, guid: 19b0cf21764734b05961b2e048d1c7c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _blurMode: 0
-  _reuseDepth: 0
-  _rerenderResolution: 2
-  _highPrecsion: 0
-  settings:
-    downsampleSteps: 2
-    baseResolution: 4
-    downsampleResolution: 4
-    iterations: 3
-    blurSpread: .600000024
-    innerStrength: 1
-    outerStrength: 1
-    boostStrength: 1
-    blendMode: 0
-    downsampleBlendMode: 100
-    falloff:
-      serializedVersion: 2
-      m_Curve:
-      - time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-      - time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-    falloffScale: 1
-    radius: 4
-    normalize: 1
 --- !u!1001 &1813660202
 Prefab:
   m_ObjectHideFlags: 0
@@ -907,6 +880,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 672077210}
+  m_RootOrder: 1
 --- !u!1 &1942898754
 GameObject:
   m_ObjectHideFlags: 0
@@ -951,3 +925,4 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+  m_RootOrder: 0
