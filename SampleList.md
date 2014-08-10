@@ -1,5 +1,17 @@
 # Basic examples
 
+## Wandering
+
+The most basic example: a single agent  wanders aimlessly around the scene while remained tethered between 15 units of (0, 0, 0).
+
+Use this scene to experiment with maximum speed, maximum force, turn time and other AutonomousVehicle properties.
+
+Behaviours used:
+
+- AutonomousVehicle
+- SteerForWander
+- SteerForTether
+
 # Advanced examples
 
 ## Obstacle Avoidance
