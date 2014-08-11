@@ -12,6 +12,25 @@ Behaviours used:
 - SteerForWander
 - SteerForTether
 
+## Go For Point
+
+Now things are getting interesting. We have two wanderers on the scene, which will pick a point, move to it, and once they arrive just select a new one.    They do this by using an event handler on the steering behaviour, which triggers when the vehicle has reached its target.
+
+See GoForPointController.cs
+
+There’s two agents on the scene: the green one will approach its target at a constant speed, the yellow one will slow down as it reaches it.
+
+Things to experiment with:
+
+* AutonomousVehicle has two properties that control how quickly it accelerates or decelerates, Acceleration Rate and Deceleration Rate. What happens with the yellow agent if you double the deceleration rate? If you set it to 1?
+* What happens with the yellow target if you increase the AutonomousVehicle’s Tick Length? Why?
+* What happens if the Turn Time is too high and the target point really close?
+
+Behaviours used:
+
+- AutonomousVehicle
+- SteerForPoint
+
 # Advanced examples
 
 ## Obstacle Avoidance
