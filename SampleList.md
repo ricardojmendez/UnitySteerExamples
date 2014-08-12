@@ -53,6 +53,19 @@ Things to experiment with:
 * What happens if you then increase the weight of SteerForForward?
 * What happens if you decrease the weight of SteerForNeighborGroup?
 
+### Neighbors-Separation
+
+Instantiates a set of agents whose main behaviour is to stay away from each other. Run the scene after you’ve gone through te Neighbors-Alignment experiments.
+
+Things to experiment with:
+
+* What happens when an agent doesn’t have any others within its radius detection radius? Why?
+* What happens if you alter the comfort distance?
+* There’s a Draw Neighbors property on SteerForNeighborGroup. Enable it and experiment with the behaviour settings. How do they change which agents the others react to?
+* Change the Max Queue Processed from AutonomousVehicle on the  Neighbors-Separation prefab to a much lower value, such as 20.  Run the scene and check what happens with the neighbour detection trace lines.  Why is that?
+
+(**Note**: There is a bug occasionally causing an invalid rotation assignment attempt which I am looking into)
+
 
 # Advanced examples
 
