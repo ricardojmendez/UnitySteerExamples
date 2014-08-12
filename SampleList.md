@@ -1,3 +1,8 @@
+# General notes
+
+* These are not meant only as demo scenes, but as a sandbox for you to experiment with the behaviours and learn the ins and outs of how UnitySteer agents are composed.  Make sure you at the very least follow the experimentation notes before pressing on.
+* Most of these examples will use SteerForTether to ensure that the agent does not wander off too far from the center of the scene.  That’s its sole reason for existing.
+
 # Basic examples
 
 ## Wandering
@@ -30,6 +35,24 @@ Behaviours used:
 
 - AutonomousVehicle
 - SteerForPoint
+
+## Neighbor examples
+
+The neighbour examples are a set of scenes meant to demonstrate how the various SteerForNeighbor behaviours interact with each other. I suggest you review them in the following order.
+
+### Neighbors-Alignment
+
+Instantiates a set of agents whose main behaviour is to steer for alignment.  They’ll be created within 10 units of the origin.  Run the scene.
+
+Things to experiment with:
+
+* What happens when you play it? Are all agents moving or do some remain static? Why? (review SteerForAlignment)
+* If some agents do remain static, when do they start moving again?
+* How is the behaviour affected if you change the Angle value on the prefab’s SteerForNeighborGroup?  What about the Min/Max Radius properties?
+* There’s a SteerForForward behaviour on the prefab.  What happens if you enable the behaviour and then play the scene?  
+* What happens if you then increase the weight of SteerForForward?
+* What happens if you decrease the weight of SteerForNeighborGroup?
+
 
 # Advanced examples
 
