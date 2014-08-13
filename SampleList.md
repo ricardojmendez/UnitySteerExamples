@@ -66,6 +66,18 @@ Things to experiment with:
 
 (**Note**: There is a bug occasionally causing an invalid rotation assignment attempt which I am looking into)
 
+## Neighbors-Cohesion
+
+Instantiates a set of agents whose main behaviour is to stay away close to their detected neighbours. Run the scene after you’ve gone through te Neighbors-Alignment and Neighbors-Separation experiments.
+
+Things to experiment with:
+
+* What’s the general agent behaviour? 
+* What happens if you increase the SteerForCohesion behaviour’s comfort distance? What happens if you decrease it?
+* Does the behaviour change if you change the SteerForNeighborGroup angle property from 45 to 90? How about 120?
+
+
+
 
 # Advanced examples
 
