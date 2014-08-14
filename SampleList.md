@@ -68,7 +68,7 @@ Things to experiment with:
 
 ## Neighbors-Cohesion
 
-Instantiates a set of agents whose main behaviour is to stay away close to their detected neighbours. Run the scene after you’ve gone through te Neighbors-Alignment and Neighbors-Separation experiments.
+Instantiates a set of agents whose main behaviour is to stay close to their detected neighbours. Run the scene after you’ve gone through te Neighbors-Alignment and Neighbors-Separation experiments.
 
 Things to experiment with:
 
