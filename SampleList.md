@@ -76,8 +76,16 @@ Things to experiment with:
 * What happens if you increase the SteerForCohesion behaviour’s comfort distance? What happens if you decrease it?
 * Does the behaviour change if you change the SteerForNeighborGroup angle property from 45 to 90? How about 120?
 
+## Combination examples
 
+There’s two more scenes on the repository, combining Alignment with Cohesion and Alignment with separation. 
 
+Some experiment notes: 
+
+* How do they differ from the scenes where only one of the behaviours is used?
+* Steering behaviours have a weight.  Play around with these values and see how the behaviour changes. For starters, give a very high value to Alignment and very low to Separation, or very high to Separation and very low to Alignment.
+* Can you create an agent which mixes Separation and Cohesion? How does it act?
+* What happens if you mix all three? Any preferred combination of properties?
 
 # Advanced examples
 
