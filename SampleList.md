@@ -104,6 +104,21 @@ Some experiment notes:
 
 Finally, a question: this agent does not have some Unity components that the neighbour example agents had, such as a collider or rigid body - why?
 
+# Intermediate examples
+
+You will notice that descriptions and suggested experiment notes are starting to get a bit more vague - by this point users are expected to have gone through the previous examples and to have more familiarity with the library, as well as knowing where to find answers themselves.
+
+## Pursuit / Evasion #1
+
+This scene contains two agents: an evader and a pursuer. When the pursuer gets close enough, the evader will start escaping; otherwise it will stay in place.
+
+Some experiment notes:
+
+* What happens if you decrease the SteerForEvasion’s Safety Distance?
+* What happens if you increase or decrease either SteerForEvasion’s or SteerForPursuit’s Prediction Time?
+* The pursuer doesn’t always aim for its quarry’s current position. Why?
+* SteerForPursuit’s weight is double that of SteerForEvasion’s, yet the pursuer is unlikely to catch up to its quarry. Why?
+
 # Advanced examples
 
 ## Obstacle Avoidance

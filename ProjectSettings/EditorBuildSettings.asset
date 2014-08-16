@@ -6,4 +6,4 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Examples/02 - Advanced/PlayingTag/Tag.unity
+    path: Assets/Examples/03 - Advanced/PlayingTag/Tag.unity
