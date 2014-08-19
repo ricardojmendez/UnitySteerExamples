@@ -119,6 +119,17 @@ Some experiment notes:
 * The pursuer doesn’t always aim for its quarry’s current position. Why?
 * SteerForPursuit’s weight is double that of SteerForEvasion’s, yet the pursuer is unlikely to catch up to its quarry. Why?
 
+## Pursuit / Evasion #2
+
+We now encounter our first planar agent example: this scene is exactly the same set up as the last one, down to the values on the agents, but both the pursuer and the evader are configured to only move on two axis - see their AutonomousVehicle’s Allowed Movement Axis setting.
+
+Some experiment notes:
+
+* On this example it is a lot easier for the pursuer to catch up to the evader, even though it still has a lower maximum speed. Why?
+* What happens to their interaction if you increase SteerforEvasion’s Safety Distance?
+* What happens if you disable movement on yet one more axe?
+
+
 # Advanced examples
 
 ## Obstacle Avoidance
