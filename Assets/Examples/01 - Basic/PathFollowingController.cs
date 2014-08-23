@@ -11,8 +11,9 @@ public class PathFollowingController : MonoBehaviour
 
 	SteerForPathSimplified _steering;
 
-	[SerializeField]
-	Transform _pathRoot;
+	[SerializeField] Transform _pathRoot;
+
+	[SerializeField] bool _followAsSpline;
 
 	// Use this for initialization
 	void Start() 
@@ -26,7 +27,7 @@ public class PathFollowingController : MonoBehaviour
 	{
 		// Get a list of points to follow;
 		var pathPoints = PathFromRoot(_pathRoot);
-		_steering.Path = new Vector3Pathway(pathPoints, 1);
+		_steering.Path = _followAsSpline ? new SplinePathway(pathPoints, 1) : new Vector3Pathway(pathPoints, 1);
 	}
 
 	static List<Vector3> PathFromRoot(Transform root)

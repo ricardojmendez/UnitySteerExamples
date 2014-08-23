@@ -104,6 +104,15 @@ Some experiment notes:
 
 Finally, a question: this agent does not have some Unity components that the neighbour example agents had, such as a collider or rigid body - why?
 
+## PathFollowing - With Spline
+
+A variant of the previous scene, it contains two path followers: one follows the standard Vector3Pathway, and the other one a SplinePathway.
+
+* How is the behaviour different between both?
+* Why?
+* What happens if you increase or lower the prediction time in both?
+
+
 # Intermediate examples
 
 You will notice that descriptions and suggested experiment notes are starting to get a bit more vague - by this point users are expected to have gone through the previous examples and to have more familiarity with the library, as well as knowing where to find answers themselves.
