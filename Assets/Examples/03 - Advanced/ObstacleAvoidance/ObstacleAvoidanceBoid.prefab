@@ -56,6 +56,7 @@ Transform:
   m_LocalScale: {x: .25, y: .25, z: .25}
   m_Children: []
   m_Father: {fileID: 400002}
+  m_RootOrder: 0
 --- !u!4 &400002
 Transform:
   m_ObjectHideFlags: 1
@@ -68,6 +69,7 @@ Transform:
   m_Children:
   - {fileID: 400000}
   m_Father: {fileID: 0}
+  m_RootOrder: 0
 --- !u!23 &2300000
 Renderer:
   m_ObjectHideFlags: 1
@@ -86,9 +88,8 @@ Renderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
   m_SortingLayerID: 0
+  m_SortingOrder: 0
 --- !u!33 &3300000
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -166,6 +167,7 @@ MonoBehaviour:
   _weight: 5
   _minRadius: 5
   _maxRadius: 15
+  _drawNeighbors: 0
   _angleCos: .42261824
 --- !u!114 &11400008
 MonoBehaviour:
@@ -194,7 +196,7 @@ MonoBehaviour:
   _canMove: 1
   _queueName: Steering
   _tickLength: .0500000007
-  _maxQueueProcessedPerUpdate: 100
+  _maxQueueProcessedPerUpdate: 50
   _traceAdjustments: 0
   _accelerationRate: 1
   _decelerationRate: .5
