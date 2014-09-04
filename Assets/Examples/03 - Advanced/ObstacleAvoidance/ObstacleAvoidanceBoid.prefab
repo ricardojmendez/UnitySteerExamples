@@ -187,7 +187,7 @@ MonoBehaviour:
   _radius: .349999994
   _minSpeedForTurning: .100000001
   _movementPriority: 0
-  _turnTime: .25
+  _turnTime: .200000003
   _mass: 1
   _allowedMovementAxes: {x: 1, y: 1, z: 1}
   _arrivalRadius: .25
@@ -247,7 +247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _weight: 100
-  _estimationTime: .200000003
+  _estimationTime: 1
 --- !u!114 &11400016
 MonoBehaviour:
   m_ObjectHideFlags: 1
