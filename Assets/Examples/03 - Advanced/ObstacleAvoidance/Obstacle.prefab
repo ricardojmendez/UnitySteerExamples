@@ -85,11 +85,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7437c9e6603c404bb91cbc45fe71c78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _drawGizmos: 0
+  _drawGizmos: 1
   _center: {x: 0, y: 0, z: 0}
-  _scaledCenter: {x: 0, y: 0, z: 0}
-  _scaledRadius: .5
-  _radius: 1
+  _radius: .75
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
