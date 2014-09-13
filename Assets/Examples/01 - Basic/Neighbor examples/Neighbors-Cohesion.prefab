@@ -119,6 +119,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _weight: 1
+  _minDistance: 5
+  _maxDistance: 10
   _comfortDistance: 5
 --- !u!114 &11400002
 MonoBehaviour:
@@ -198,8 +200,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _drawGizmos: 1
   _center: {x: 0, y: 0, z: 0}
-  _scaledCenter: {x: 0, y: 0, z: 0}
-  _scaledRadius: 1
   _radius: 1
   _minSpeedForTurning: .100000001
   _movementPriority: 0

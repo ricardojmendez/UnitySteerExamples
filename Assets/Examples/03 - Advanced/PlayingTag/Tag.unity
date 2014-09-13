@@ -162,7 +162,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _weight: 2
-  _comfortDistance: 1.5
+  _minDistance: 2
+  _maxDistance: 15
 --- !u!114 &11944893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -175,10 +176,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bb541a7bf4d841a8a655dc685b730bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _weight: 4
+  _weight: 3
+  _minDistance: 0
+  _maxDistance: 4
   _comfortDistance: 2
   _multiplierInsideComfortDistance: 2
-  _maximumSeparation: 3
   _vehicleRadiusImpact: 2
 --- !u!114 &11944894
 MonoBehaviour:
@@ -193,6 +195,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _weight: 2
+  _minDistance: .5
+  _maxDistance: 10
 --- !u!114 &11944895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -206,7 +210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _weight: 10
-  _minRadius: 5
+  _minRadius: 0
   _maxRadius: 15
   _drawNeighbors: 0
   _angleCos: .42261824
@@ -675,6 +679,10 @@ Prefab:
     - target: {fileID: 11400008, guid: d8122fb865ec44e198fa78b217dc33dc, type: 2}
       propertyPath: _allowedMovement.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: d8122fb865ec44e198fa78b217dc33dc, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d8122fb865ec44e198fa78b217dc33dc, type: 2}

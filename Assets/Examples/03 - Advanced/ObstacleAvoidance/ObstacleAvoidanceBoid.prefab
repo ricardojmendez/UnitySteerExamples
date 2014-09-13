@@ -124,6 +124,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _weight: 1
+  _minDistance: 3
+  _maxDistance: 15
   _comfortDistance: 1.5
 --- !u!114 &11400002
 MonoBehaviour:
@@ -136,7 +138,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bb541a7bf4d841a8a655dc685b730bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _weight: 8
+  _weight: 3
+  _minDistance: 0
+  _maxDistance: 3
   _comfortDistance: 2
   _multiplierInsideComfortDistance: 2
   _maximumSeparation: 3
@@ -153,6 +157,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _weight: 2
+  _minDistance: 1
+  _maxDistance: 5
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -165,9 +171,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _weight: 5
-  _minRadius: 5
+  _minRadius: .5
   _maxRadius: 15
-  _drawNeighbors: 0
+  _drawNeighbors: 1
   _angleCos: .42261824
 --- !u!114 &11400008
 MonoBehaviour:
@@ -182,8 +188,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _drawGizmos: 1
   _center: {x: 0, y: 0, z: 0}
-  _scaledCenter: {x: 0, y: 0, z: 0}
-  _scaledRadius: .349999994
   _radius: .349999994
   _minSpeedForTurning: .100000001
   _movementPriority: 0
