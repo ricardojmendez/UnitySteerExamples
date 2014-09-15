@@ -168,9 +168,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _weight: 2
-  _minDistance: 2
+  _minDistance: 4
   _maxDistance: 15
-  _comfortDistance: 1.5
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -184,10 +183,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _weight: 3
   _minDistance: 0
-  _maxDistance: 4
-  _comfortDistance: 2
+  _maxDistance: 3
+  _comfortDistance: 1.5
   _multiplierInsideComfortDistance: 2
-  _maximumSeparation: 4
   _vehicleRadiusImpact: 2
 --- !u!114 &11400004
 MonoBehaviour:
@@ -201,8 +199,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _weight: 2
-  _minDistance: .5
-  _maxDistance: 10
+  _minDistance: 1
+  _maxDistance: 5
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1

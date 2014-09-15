@@ -60,6 +60,7 @@ Transform:
   m_Children:
   - {fileID: 400002}
   m_Father: {fileID: 0}
+  m_RootOrder: 0
 --- !u!4 &400002
 Transform:
   m_ObjectHideFlags: 1
@@ -71,6 +72,7 @@ Transform:
   m_LocalScale: {x: .25, y: .25, z: .25}
   m_Children: []
   m_Father: {fileID: 400000}
+  m_RootOrder: 0
 --- !u!23 &2300000
 Renderer:
   m_ObjectHideFlags: 1
@@ -89,9 +91,8 @@ Renderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
   m_SortingLayerID: 0
+  m_SortingOrder: 0
 --- !u!33 &3300000
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -132,9 +133,8 @@ TrailRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
   m_SortingLayerID: 0
+  m_SortingOrder: 0
   m_Time: 5
   m_StartWidth: .150000006
   m_EndWidth: .0500000007
@@ -182,7 +182,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _weight: 2
-  _comfortDistance: 1.5
+  _minDistance: 4
+  _maxDistance: 15
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -194,10 +195,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bb541a7bf4d841a8a655dc685b730bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _weight: 8
-  _comfortDistance: 2
-  _multiplierInsideComfortDistance: 3
-  _maximumSeparation: 3
+  _weight: 3
+  _minDistance: 0
+  _maxDistance: 3
+  _comfortDistance: 1.5
+  _multiplierInsideComfortDistance: 2
   _vehicleRadiusImpact: 2
 --- !u!114 &11400008
 MonoBehaviour:
@@ -211,6 +213,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _weight: 2
+  _minDistance: 1
+  _maxDistance: 5
 --- !u!114 &11400010
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -223,8 +227,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _weight: 10
-  _minRadius: 5
+  _minRadius: 0
   _maxRadius: 15
+  _drawNeighbors: 0
   _angleCos: .42261824
 --- !u!114 &11400012
 MonoBehaviour:
@@ -239,14 +244,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _drawGizmos: 0
   _center: {x: 0, y: 0, z: 0}
-  _scaledCenter: {x: 0, y: 0, z: 0}
-  _scaledRadius: .300000012
   _radius: .300000012
   _minSpeedForTurning: .100000001
   _movementPriority: 0
   _turnTime: .400000006
   _mass: 1
-  _isPlanar: 0
   _allowedMovementAxes: {x: 1, y: 0, z: 1}
   _arrivalRadius: .25
   _maxSpeed: 6
@@ -335,6 +337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1ed4b2bcdc854f2cb5f806f875e56ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _originalRadius: .300000012
   _sizeVariance: .25
   _renderer: {fileID: 2300000}
   _glowMaterial: {fileID: 2100000, guid: 851513aea6a5c4aa1a9f04f20c50ebab, type: 2}
