@@ -303,7 +303,6 @@ MonoBehaviour:
   _maxDistance: 7
   _comfortDistance: 2
   _multiplierInsideComfortDistance: 5
-  _maximumSeparation: 10
   _vehicleRadiusImpact: 10
 --- !u!135 &13500000
 SphereCollider:

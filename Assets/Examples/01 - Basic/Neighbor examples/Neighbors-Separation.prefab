@@ -147,8 +147,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _weight: 10
-  _minRadius: 3
-  _maxRadius: 7.5
+  _minRadius: 1
+  _maxRadius: 10
   _drawNeighbors: 1
   _angleCos: .707106769
 --- !u!114 &11400010
@@ -185,8 +185,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _drawGizmos: 1
   _center: {x: 0, y: 0, z: 0}
-  _scaledCenter: {x: 0, y: 0, z: 0}
-  _scaledRadius: 1
   _radius: 1
   _minSpeedForTurning: .100000001
   _movementPriority: 0
@@ -215,9 +213,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _weight: 2
+  _minDistance: .5
+  _maxDistance: 5
   _comfortDistance: 2
   _multiplierInsideComfortDistance: 2
-  _maximumSeparation: 10
   _vehicleRadiusImpact: 2
 --- !u!135 &13500000
 SphereCollider:

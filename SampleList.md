@@ -65,8 +65,6 @@ Things to experiment with:
 * There’s a Draw Neighbors property on SteerForNeighborGroup. Enable it and experiment with the behavior settings. How do they change which agents the others react to?
 * Change the Max Queue Processed from AutonomousVehicle on the  Neighbors-Separation prefab to a much lower value, such as 20.  Run the scene and check what happens with the neighbour detection trace lines.  Why is that?
 
-(**Note**: There is a bug occasionally causing an invalid rotation assignment attempt which I am looking into)
-
 ### Neighbors-Cohesion
 
 Instantiates a set of agents whose main behavior is to stay close to their detected neighbours. Run the scene after you’ve gone through te Neighbors-Alignment and Neighbors-Separation experiments.
