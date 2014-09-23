@@ -136,6 +136,15 @@ Some experiment notes:
 * What happens to their interaction if you increase SteerforEvasion’s Safety Distance?
 * What happens if you disable movement on yet one more axe?
 
+## Pursuit vs. Follow
+
+A simple scene contrasting the Follow behavior with the Pursuit one.
+
+Some learning notes:
+
+* Which behavior is simpler? Why?
+* Why does the Follow behavior uses a transform as its target instead of a vehicle?
+* What happens if you disable the pursuer?
 
 # Advanced examples
 
