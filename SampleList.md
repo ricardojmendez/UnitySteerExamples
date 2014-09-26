@@ -194,3 +194,12 @@ Learning notes:
 
 See TagPlayer.cs for the controlling behavior.
 
+## Playing Tag - With Obstacles
+
+All together now… it combines the previous tag-playing example with spherical obstacle avoidance, and acts as a test bed for balancing out the strengths between behaviors.
+
+Try running both the PlayingTag and PlayingTag-WithObstacles scenes in parallel. 
+
+* Are the agent’s behaviors different?
+* What happens to the flocks near obstacles?
+* Is the evasion behavior different because of the presence of the SteerForSphericalObstacles behavior?
