@@ -1,10 +1,7 @@
 # Examples for UnitySteer
 
-This repository will contain a set of UnitySteer examples.  It’s just been cleaned.
-
-UnitySteer is a library for autonomous agents in Unity written and maintained by
-[Ricardo J. Méndez](https://github.com/ricardojmendez). Pull requests
-are welcome.
+This repository contains a series of examples for UnitySteer, a library for autonomous agents in Unity written and maintained by
+[Ricardo J. Méndez](https://github.com/ricardojmendez). Pull requests are welcome.
 
 See [SampleList.md](SampleList.md) for a description of the current examples.
 
@@ -20,10 +17,6 @@ It includes the UnitySteer Github repository as a submodule.   If you have just 
 * You have run _git submodule update_ to check out the latest referenced version;
 
 Or you could use an application like [SourceTree](http://www.sourcetreeapp.com/) which handles the submodule semantics for you.
-
-# Known issue on Unity 4.3.x
-
-I’m developing and testing these examples on Unity 4.5 and 4.6.  Are you getting a NullReferenceException on 4.3.4?  [Read the comments on this post for a workaround](http://arges-systems.com/blog/2014/08/22/unitysteer-3-0-beta-2/).
 
 # License
 
