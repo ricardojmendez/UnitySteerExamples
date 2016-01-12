@@ -3,6 +3,8 @@
 This repository contains a series of examples for UnitySteer, a library for autonomous agents in Unity written and maintained by
 [Ricardo J. Méndez](https://github.com/ricardojmendez). Pull requests are welcome.
 
+This version requires Unity 5.  For the last version supporting Unity 4.x, see the [v.3 tag](https://github.com/ricardojmendez/UnitySteerExamples/tree/v3.0).
+
 See [SampleList.md](SampleList.md) for a description of the current examples.
 
 # A word on methodology
