@@ -136,6 +136,18 @@ Prefab:
       propertyPath: orthographic size
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 22455748, guid: 5ecd182f8a68a42179510a3bddaaa155, type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22493000, guid: 5ecd182f8a68a42179510a3bddaaa155, type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22493000, guid: 5ecd182f8a68a42179510a3bddaaa155, type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5ecd182f8a68a42179510a3bddaaa155, type: 2}
   m_IsPrefabParent: 0
