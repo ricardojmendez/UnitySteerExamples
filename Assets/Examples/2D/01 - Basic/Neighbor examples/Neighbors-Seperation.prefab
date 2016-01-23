@@ -12,7 +12,6 @@ GameObject:
   - 212: {fileID: 21263172}
   - 50: {fileID: 5088886}
   - 58: {fileID: 5866588}
-  - 114: {fileID: 11448698}
   - 114: {fileID: 11456812}
   - 114: {fileID: 11454596}
   - 114: {fileID: 11414366}
@@ -67,7 +66,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.09
+  m_Radius: 0.21
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -79,7 +78,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 073a49e84f5bf4fc99b9f8a4d922f686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Radius: {x: 10, y: 10, z: 0}
+  Radius: {x: 1, y: 1, z: 0}
   RandomizeRotation: 1
   AllowedAxes: {x: 1, y: 1, z: 0}
 --- !u!114 &11414366
@@ -93,23 +92,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 354e549002c5a49a79e1dc8d5cf74df2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _weight: 1
-  _minRadius: 0.3
-  _maxRadius: 0.5
+  _weight: 10
+  _minRadius: 1
+  _maxRadius: 10
   _drawNeighbors: 0
-  _angleCos: 0.7
---- !u!114 &11448698
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05f064fa6dd2e4bca8bf926d92e92768, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _weight: 5.89
+  _angleCos: 0.70710677
 --- !u!114 &11454596
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -124,11 +111,11 @@ MonoBehaviour:
   _queueName: Radar2D
   _maxQueueProcessedPerUpdate: 20
   _tickLength: 0.5
-  _detectionRadius: 0.5
+  _detectionRadius: 5
   _detectDisabledVehicles: 0
   _layersChecked:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
   _drawGizmos: 0
   _preAllocateSize: 30
 --- !u!114 &11456812
@@ -143,7 +130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _weight: 20
-  _maximumDistance: 10
+  _maximumDistance: 20
   _tetherPosition: {x: 0, y: 0}
 --- !u!114 &11468566
 MonoBehaviour:
@@ -158,15 +145,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _drawGizmos: 1
   _center: {x: 0, y: 0}
-  _radius: 0.27
+  _radius: 0.6
   _minSpeedForTurning: 0.1
   _movementPriority: 0
   _turnTime: 0.3
   _mass: 1
   _allowedMovementAxes: {x: 1, y: 1}
   _arrivalRadius: 0.25
-  _maxSpeed: 3
-  _maxForce: 3
+  _maxSpeed: 8
+  _maxForce: 5
   _canMove: 1
   _forward: 0
   _queueName: Steering2D
@@ -186,10 +173,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab27b401088f749ababd23602d6a403f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _weight: 10
+  _weight: 2
   _minDistance: 1
-  _maxDistance: 3
-  _comfortDistance: 2
+  _maxDistance: 10
+  _comfortDistance: 3
   _multiplierInsideComfortDistance: 2
   _vehicleRadiusImpact: 2
 --- !u!212 &21263172
@@ -218,7 +205,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 3e0029184792740999fa56f9ce82f64f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -235,23 +222,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: _detectionRadius
-      value: 0.6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: _maxDistance
-      value: 3
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: _minRadius
-      value: 0.3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: _maxRadius
-      value: 0.9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: _minDistance
@@ -259,7 +246,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: _comfortDistance
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: _multiplierInsideComfortDistance
@@ -271,23 +258,48 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: _radius
-      value: 0.27
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: _weight
-      value: 5.89
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: Radius.x
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: Radius.y
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: _maximumDistance
-      value: 10
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3e0029184792740999fa56f9ce82f64f,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: _drawNeighbors
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: _layersChecked.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: _angleCos
+      value: 0.70710677
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: _maxSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: _maxForce
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

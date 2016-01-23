@@ -113,7 +113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _prefab: {fileID: 100002, guid: 8ce076a7e9a82466f8da59d935ab18e2, type: 2}
-  _amount: 5
+  _amount: 40
 --- !u!4 &231691889
 Transform:
   m_ObjectHideFlags: 0
@@ -171,6 +171,18 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22493000, guid: 5ecd182f8a68a42179510a3bddaaa155, type: 2}
       propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22455748, guid: 5ecd182f8a68a42179510a3bddaaa155, type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22493000, guid: 5ecd182f8a68a42179510a3bddaaa155, type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22493000, guid: 5ecd182f8a68a42179510a3bddaaa155, type: 2}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

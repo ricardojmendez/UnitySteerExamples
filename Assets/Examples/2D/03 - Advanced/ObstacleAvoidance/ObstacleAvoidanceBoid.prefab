@@ -70,7 +70,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.095
+  m_Radius: 0.2
 --- !u!114 &11412526
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -132,7 +132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _weight: 10
-  _maximumDistance: 5
+  _maximumDistance: 20
   _tetherPosition: {x: 0, y: 0}
 --- !u!114 &11470940
 MonoBehaviour:
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _drawGizmos: 0
   _center: {x: 0, y: 0}
-  _radius: 0.27
+  _radius: 0.6
   _minSpeedForTurning: 0.1
   _movementPriority: 0
   _turnTime: 0.2
@@ -176,7 +176,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _weight: 1
-  _minDistance: 0.3
+  _minDistance: 0.7
   _maxDistance: 1
 --- !u!114 &11479536
 MonoBehaviour:
@@ -204,7 +204,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _weight: 1
-  _minDistance: 0.3
+  _minDistance: 0.7
   _maxDistance: 1
 --- !u!114 &11483132
 MonoBehaviour:
@@ -218,8 +218,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _weight: 5
-  _minRadius: 0.3
-  _maxRadius: 1
+  _minRadius: 0.7
+  _maxRadius: 1.25
   _drawNeighbors: 1
   _angleCos: 0.7
 --- !u!114 &11485350
@@ -233,7 +233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 073a49e84f5bf4fc99b9f8a4d922f686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Radius: {x: 5, y: 5, z: 0}
+  Radius: {x: 20, y: 20, z: 0}
   RandomizeRotation: 1
   AllowedAxes: {x: 1, y: 1, z: 0}
 --- !u!212 &21249392
@@ -262,7 +262,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 3e0029184792740999fa56f9ce82f64f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -272,7 +272,19 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: _maximumDistance
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: Radius.x
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: Radius.y
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 158264}
