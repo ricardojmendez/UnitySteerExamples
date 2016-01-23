@@ -130,11 +130,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22455748, guid: 5ecd182f8a68a42179510a3bddaaa155, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0.505
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 22493000, guid: 5ecd182f8a68a42179510a3bddaaa155, type: 2}
       propertyPath: m_AnchorMin.y
-      value: 0.505
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 22493000, guid: 5ecd182f8a68a42179510a3bddaaa155, type: 2}
       propertyPath: m_AnchorMax.x
@@ -142,7 +142,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22493000, guid: 5ecd182f8a68a42179510a3bddaaa155, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0.505
+      value: 0.75
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5ecd182f8a68a42179510a3bddaaa155, type: 2}
@@ -192,7 +192,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11431870, guid: 37914b158a30646ccb761198d521d3a6, type: 2}
       propertyPath: _radius
-      value: 0.27
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 11431870, guid: 37914b158a30646ccb761198d521d3a6, type: 2}
       propertyPath: m_Enabled
@@ -206,6 +206,11 @@ Prefab:
       propertyPath: _allowedMovementAxes.x
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 21213706, guid: 37914b158a30646ccb761198d521d3a6, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3e0029184792740999fa56f9ce82f64f,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 37914b158a30646ccb761198d521d3a6, type: 2}
   m_IsPrefabParent: 0
@@ -231,7 +236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _weight: 1
-  _maximumDistance: 5
+  _maximumDistance: 20
   _tetherPosition: {x: 0, y: 0}
 --- !u!114 &1000200671
 MonoBehaviour:
@@ -245,10 +250,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _weight: 20
-  _acceptableDistance: 1
+  _acceptableDistance: 0.7
   _slowDownOnApproach: 1
   _quarry: {fileID: 1754993278}
-  _maxPredictionTime: 0.2
+  _maxPredictionTime: 1
 --- !u!1001 &1754993274
 Prefab:
   m_ObjectHideFlags: 0
@@ -306,12 +311,17 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11431870, guid: 37914b158a30646ccb761198d521d3a6, type: 2}
       propertyPath: _radius
-      value: 0.27
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 11431870, guid: 37914b158a30646ccb761198d521d3a6, type: 2}
       propertyPath: _allowedMovementAxes.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 21213706, guid: 37914b158a30646ccb761198d521d3a6, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3e0029184792740999fa56f9ce82f64f,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 37914b158a30646ccb761198d521d3a6, type: 2}
   m_IsPrefabParent: 0
@@ -333,7 +343,7 @@ MonoBehaviour:
   _weight: 10
   _menace: {fileID: 1000200668}
   _predictionTime: 0.2
-  _safetyDistance: 2
+  _safetyDistance: 3
 --- !u!114 &1754993277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -346,7 +356,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _weight: 1
-  _maximumDistance: 5
+  _maximumDistance: 20
   _tetherPosition: {x: 0, y: 0}
 --- !u!114 &1754993278 stripped
 MonoBehaviour:
