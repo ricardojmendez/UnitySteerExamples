@@ -21,6 +21,7 @@ GameObject:
   - 114: {fileID: 11479536}
   - 114: {fileID: 11412526}
   - 212: {fileID: 21249392}
+  - 114: {fileID: 11456300}
   m_Layer: 0
   m_Name: ObstacleAvoidanceBoid
   m_TagString: Untagged
@@ -52,7 +53,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -82,7 +83,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c7788dd8cc0a4d48b1fbbbe52819e62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _weight: 100
+  _weight: 3
   _estimationTime: 1
 --- !u!114 &11435006
 MonoBehaviour:
@@ -113,7 +114,7 @@ MonoBehaviour:
   _queueName: Radar2D
   _maxQueueProcessedPerUpdate: 100
   _tickLength: 0.5
-  _detectionRadius: 1
+  _detectionRadius: 6
   _detectDisabledVehicles: 0
   _layersChecked:
     serializedVersion: 2
@@ -134,6 +135,23 @@ MonoBehaviour:
   _weight: 10
   _maximumDistance: 20
   _tetherPosition: {x: 0, y: 0}
+--- !u!114 &11456300
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 158264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab27b401088f749ababd23602d6a403f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _weight: 2
+  _minDistance: 0
+  _maxDistance: 2
+  _comfortDistance: 1.5
+  _multiplierInsideComfortDistance: 3
+  _vehicleRadiusImpact: 0
 --- !u!114 &11470940
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -155,15 +173,15 @@ MonoBehaviour:
   _allowedMovementAxes: {x: 1, y: 1}
   _arrivalRadius: 0.25
   _maxSpeed: 3
-  _maxForce: 3
+  _maxForce: 8
   _canMove: 1
   _forward: 0
   _queueName: Steering2D
   _tickLength: 0.1
   _maxQueueProcessedPerUpdate: 50
   _traceAdjustments: 0
-  _accelerationRate: 5
-  _decelerationRate: 8
+  _accelerationRate: 1
+  _decelerationRate: 0.75
 --- !u!114 &11474146
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -176,8 +194,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _weight: 1
-  _minDistance: 0.7
-  _maxDistance: 1
+  _minDistance: 1.2
+  _maxDistance: 3
 --- !u!114 &11479536
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -205,7 +223,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _weight: 1
   _minDistance: 0.7
-  _maxDistance: 1
+  _maxDistance: 3
 --- !u!114 &11483132
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -218,10 +236,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _weight: 5
-  _minRadius: 0.7
-  _maxRadius: 1.25
+  _minRadius: 2
+  _maxRadius: 6
   _drawNeighbors: 1
-  _angleCos: 0.7
+  _angleCos: 0.49999997
 --- !u!114 &11485350
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -284,6 +302,62 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: Radius.y
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: _detectionRadius
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: _weight
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: _minRadius
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: _maxRadius
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: _minDistance
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: _comfortDistance
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: _multiplierInsideComfortDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: _maxDistance
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: _angleCos
+      value: 0.49999997
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: _turnTime
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: _accelerationRate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: _decelerationRate
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: _maxForce
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
