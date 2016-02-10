@@ -9,7 +9,9 @@ This version requires Unity 5.  For the last version supporting Unity 4.x, see t
 
 # Usage
 
-Download the [latest stable package](https://github.com/GandaG/UnitySteerExamples/releases/latest). See [SampleList.md](SampleList.md) for a description of the current examples.
+- Download the [latest stable package](https://github.com/GandaG/UnitySteerExamples/releases/latest);
+- Create a new project in Unity and import the *.unitypackage* file (Assets -> Import Package -> Custom);
+- See [SampleList.md](SampleList.md) for a description of the current examples.
 
 # A word on methodology
 
